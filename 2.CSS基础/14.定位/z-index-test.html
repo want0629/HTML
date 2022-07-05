@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: 3px solid;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        
+        .circle1 {
+            top: 0;
+            left: 0;
+            border-color: blue;
+        }
+        
+        .circle2 {
+            top: 0;
+            left: 70px;
+            border-color: black;
+        }
+        
+        .circle3 {
+            top: 0;
+            left: 140px;
+            border-color: red;
+        }
+        
+        .circle4 {
+            top: 40px;
+            left: 35px;
+            border-color: yellow;
+        }
+        
+        .circle5 {
+            top: 40px;
+            left: 105px;
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item circle1" style="z-index: -1; background-color: blue;"></div>
+    <div class="item circle2" style="z-index: 2;"></div>
+    <div class="item circle3" style="z-index: 3;"></div>
+    <div class="item circle4" style="z-index: 4;"></div>
+    <div class="item circle5" style="z-index: 5;"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa assumenda nesciunt fugit unde eaque consequuntur maxime nisi temporibus ducimus modi.</p>
+</body>
+
+</html>

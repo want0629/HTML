@@ -1,0 +1,98 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.banner {
+    width: 520px;
+    height: 304px;
+    margin: 1em auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .imgs {
+    width: 1560px;
+    height: 304px;
+}
+
+.banner .left,
+.banner .right {
+    position: absolute;
+    /* background: #FFF; */
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+    line-height: 50px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+.banner .left:hover,
+.banner .right:hover {
+    background: #fff;
+    color: red;
+    border-radius: 50%;
+}
+
+.banner .left {
+    left: 20px;
+    /* border: 2px solid #fff; */
+    /* border-radius: 50%; */
+    /* box-sizing: border-box; */
+}
+
+.banner .right {
+    right: 20px;
+}
+
+.banner .imgs a {
+    float: left;
+}
+
+.banner .imgs a img {
+    width: 520px;
+    height: 304px;
+}
+
+.banner .modal {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.banner .modal .title {
+    float: left;
+    font-weight: bold;
+}
+
+.banner .modal .dots {
+    float: right;
+}
+
+.banner .modal .dots ul>li {
+    width: 7px;
+    height: 7px;
+    background-color: #CCC;
+    border-radius: 50%;
+    margin: 0 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.banner .modal .dots ul>li:hover {
+    background: #369;
+}

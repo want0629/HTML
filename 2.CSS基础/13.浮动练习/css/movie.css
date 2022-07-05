@@ -1,0 +1,128 @@
+body {
+    color: #333;
+}
+
+
+/* 解决浮动高度坍塌问题 */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main {
+    line-height: 1.5;
+}
+
+.main .nav {
+    height: 60px;
+    background-color: #47464a;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.main .nav a {
+    margin: 0 30px;
+}
+
+.main .nav a:hover {
+    color: #FFF;
+}
+
+.main .nav a.selected {
+    color: #EF4238;
+}
+
+.containal {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.main .containal .choose-area {
+    border: 1px solid #E5E5E5;
+    margin: 40px 0;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 30px;
+}
+
+.main .containal .choose-area .choose-item {
+    margin: 1em 0;
+    border-bottom: 1px dotted #E5E5E5;
+}
+
+.main .containal .choose-area .choose-item.border-noline {
+    border: none;
+}
+
+.main .containal .choose-area .choose-item .left {
+    float: left;
+    color: #999;
+}
+
+.main .containal .choose-area .choose-item .right {
+    float: left;
+    width: auto;
+    width: 1010px;
+}
+
+.main .containal .choose-area .choose-item .right li {
+    float: left;
+    margin: 0 9px;
+    padding: 0 6px;
+}
+
+.main .containal .choose-area .choose-item .right li:hover {
+    color: #EF4238;
+}
+
+.main .containal .choose-area .choose-item .right li.selected {
+    background-color: #EF4238;
+    color: #FFF;
+    /* CSS3 圆角属性 */
+    border-radius: 15px;
+}
+
+.main .containal .movies .movie-item {
+    float: left;
+    width: 160px;
+    margin: 10px 32px 10px 0px;
+}
+
+
+/* 只设置这些元素的第一个子元素 */
+
+.main .containal .movies .movie-item:nth-child(6n) {
+    margin-right: 0px;
+}
+
+.main .containal .movies .movie-item .poster img {
+    width: 160px;
+    height: 220px;
+}
+
+.main .containal .movies .movie-item .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 2px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main .containal .movies .movie-item .score {
+    color: #FFb400;
+    text-align: center;
+    /* line-height: 2.5; */
+    font-style: italic;
+}
+
+
+/* 元素选择器，选中这个元素的第一个字母 */
+
+.main .containal .movies .movie-item .score::first-letter {
+    font-size: 1.3em
+}

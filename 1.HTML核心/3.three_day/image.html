@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img 属性</title>
+</head>
+<body>
+
+    <!-- figure 包裹 图片、图片标题、描述使用 -->
+    <!-- figcaption 包裹内容的标题 -->
+    <figure>
+    <!-- alt 图片失效时显示的内容 -->
+    <a target="_blank" href="https://baike.baidu.com/item/%E4%B9%9D%E5%A4%A7%E8%A1%8C%E6%98%9F/464025?fr=aladdin">
+        <img usemap="#tiaozhuan" src="f31fbe096b63f624e7a1b7178744ebf81a4ca322.webp" title="点击跳转" alt="111">
+    </a>
+
+    <figcaption>
+    <h2>
+        行星
+    </h2>
+    </figcaption>
+
+    <p>
+        历史上行星名字来自于它们的位置在天空中不固定，就好像它们在星空中行走一般。太阳系内肉眼可见的5颗行星水星、金星、火星、木星和土星早在史前就已经被人类发现了。16世纪，日心说取代了地心说，人类了解到地球本身也是一颗行星。
+望远镜被发明和万有引力被发现后，人类又发现了天王星、海王星、冥王星（已被重分类为矮行星），还有为数不少的小行星。20世纪末人类在太阳系外的恒星系统中也发现了行星，截至2016年5月8日，人类已发现2125颗太阳系外的行星。
+    </p>
+    </figure>
+
+    <map name="tiaozhuan">
+        <!-- 圆形 -->
+        <area target="_blank" shape="circle" coords="429,159,38" href="https://baike.baidu.com/item/%E6%9C%A8%E6%98%9F/222105?fr=aladdin" alt="木星">
+        <!-- 正方形 -->
+        <area target="_blank" shape="rect" coords="375,199,439,235" href="https://baike.baidu.com/item/%E6%9C%A8%E6%98%9F/222105?fr=aladdin" alt="木星">
+        <!-- 多边形 -->
+        <area target="_blank" shape="poly" coords="468,433,546,378,616,380,661,419,660,468,600,517,439,517" href="https://baike.baidu.com/item/%E6%9C%A8%E6%98%9F/222105?fr=aladdin" alt="木星">
+    </map>
+
+</body>
+</html>

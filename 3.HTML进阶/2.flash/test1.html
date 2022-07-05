@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flash</title>
+    <style>
+        object,
+        embed {
+            width: 600px;
+            /* height: 600px; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- quality参数，传递画质清晰度 -->
+    <!-- <param name="quality" value="high">  -->
+
+    <!-- 更加兼容的做法 -->
+    <object data="./img/1.png" type="image/png">
+        <param name="quality" value="high">
+        <embed quality="high" src="./img/1.png" type="image/png">
+    </object>
+</body>
+
+</html>

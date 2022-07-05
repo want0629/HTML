@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS样式</title>
+    <style>
+        h2{
+            color:rosybrown;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        /* id 选择器 */
+        #p1{
+            color: purple;
+        }
+        /* 元素选择器 */
+        p{
+            color: aquamarine;
+        }
+        /* 类选择器 */
+        .want{
+            color: bisque;
+            font-size: 2em;
+        }
+        /* 类选择器 */
+        .font_big{
+            font-size: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- CSS 规则 = 选择器 + 声明块 -->
+
+    <!-- 选择器 -->
+    <!-- 1.ID选择器 ： 选择的是对应id值的内容 使用较少,范围太小 -->
+    <!-- 2.元素选择器 使用较少,范围太广-->
+    <!-- 3.类选择器 -->
+
+    <!-- 声明块 ： 出现在大括号中,包含很多声明,也叫属性 -->
+
+    <!-- CSS 代码位置 -->
+    <!-- 1.内部样式表 ： 书写在 style 中 -->
+    <!-- 2.内联样式表 ： 书写在元素的style中 -->
+    <!-- 3.外部样式表 ： 书写到独立的CSS文件中 -->
+    <!-- 3.1.推荐使用外部样式表 ： 
+            1.外部样式表可以解决多个页面样式重复的功能 
+            2.有利于浏览器缓存,提高页面响应速度 
+            3.有利于代码分离(HTML、CSS),更容易阅读和维护 -->
+
+    <h2 class="want font_big">添加样式</h2>
+
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, expedita.</p>
+    <p class="want">Velit atque rem, ex officia neque quod cumque iusto enim.</p>
+
+    <!-- 内联选择器 -->
+    <p style="border: 0em; color: chartreuse;">Iusto blanditiis provident esse est, quis perferendis et hic omnis.</p>
+
+    <p>Obcaecati earum esse possimus a eius expedita aspernatur quidem sint?</p>
+    <p>A nobis, sequi magni illo omnis minus veniam consectetur quaerat.</p>
+</body>
+</html>

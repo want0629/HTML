@@ -1,0 +1,44 @@
+/* * {
+    color: #008c8c;
+} */
+
+/* [href="https://www.sina.com.cn"]{
+    color: red;
+}
+[href="https://www.baidu.com"]{
+    color: blue;
+}
+[href="https://www.douyu.com"]{
+    color: #ff5d23;
+}
+
+
+[class~='want']{
+    color: blueviolet;
+}
+
+/* 包含 */
+/* [class*='haha']{ 
+     color: bisque; 
+}  */
+
+/* 超链接未访问时的状态 */
+a:link {
+    color: blue;
+}
+
+/* 超链接已经访问过的状态 */
+a:visited {
+    color: black;
+}
+
+/* 选中鼠标悬停时的a元素 */
+a:hover {
+    color: red;
+}
+
+/* 鼠标按下时的a元素 */
+a:active {
+    color: green;
+}
+

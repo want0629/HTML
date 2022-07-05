@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset</title>
+</head>
+
+<body>
+    <div>
+        <h1>修改用户信息</h1>
+        <fieldset>
+            <legend>账号信息</legend>
+            <p>用户名：
+                <input readonly type="text" name="username" value="want" id="">
+            </p>
+            <p>密码：
+                <input type="password" name="password">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>用户基本信息</legend>
+            <p>用户姓名：
+                <input type="text" name="name" id="" disabled value="want">
+            </p>
+            <p>城市：
+                <select name="city" id="">
+                    <option value="上海">上海</option>
+                    <option value="北京">北京</option>
+                    <option value="北京">南京</option>
+                </select>
+            </p>
+            <p>
+                <button>提交修改</button>
+            </p>
+        </fieldset>
+    </div>
+</body>
+
+</html>

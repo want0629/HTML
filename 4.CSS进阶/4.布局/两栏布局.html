@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        .container {
+            background: lightblue;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .aside {
+            float: left;
+            background: #008c8c;
+            color: #FFF;
+            width: 200px;
+            margin-right: 20px;
+        }
+        
+        .main {
+            /* float: right; */
+            overflow: hidden;
+            background: lightcoral;
+            color: #FFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <aside class="aside">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error fuga commodi, dolor iste inventore deserunt consectetur. Earum iusto dicta inventore architecto dignissimos, modi exercitationem et voluptatem sed quia, mollitia voluptate temporibus veniam
+            ex totam deleniti. Ratione atque quam fugiat quo, illo architecto esse quasi dolores laboriosam natus repellat excepturi. Obcaecati in quam autem excepturi illo alias voluptatibus expedita? Eligendi, distinctio quo! Fuga architecto voluptate
+            consectetur atque quod modi neque? Sapiente error tempore ratione sit dolor. Ad nemo, perferendis praesentium consectetur repudiandae obcaecati beatae sunt, suscipit eligendi deleniti ducimus vero possimus aut velit amet quos. Harum doloribus
+            delectus nesciunt inventore temporibus.
+        </aside>
+        <div class="main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate natus exercitationem officia quo excepturi nihil molestias animi expedita ipsa dolorem, doloremque nam sit tempore at id dolore fugit. Esse tempora repellat error earum qui dicta
+            iusto ratione labore laudantium, voluptatem saepe magnam modi officiis voluptates delectus cumque aliquid iste quis! Officiis excepturi laudantium molestias distinctio vitae ea neque consectetur quia nulla maxime quis necessitatibus tenetur
+            accusamus omnis, perferendis praesentium dolores laborum id hic voluptas delectus dolorem error doloremque! Maiores natus necessitatibus ad sit quo consequatur eum modi nam nobis, illo vitae nemo quos iure cumque in unde voluptas explicabo
+            delectus!
+        </div>
+    </div>
+</body>
+
+</html>

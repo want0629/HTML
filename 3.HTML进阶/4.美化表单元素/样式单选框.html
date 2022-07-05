@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式单选框</title>
+    <style>
+        .radio {
+            width: 10px;
+            height: 10px;
+            border: 2px solid #4ae1e1;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .radio.checked {
+            border-color: #008c8c;
+        }
+        
+        .radio.checked::after {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #008c8c;
+            margin-left: 2px;
+            margin-top: 2px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="radio checked">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 元素</title>
+    <style>
+        body {
+            padding-bottom: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <!-- 普通文本输入框 -->
+        <input type="text" placeholder="用户名">
+    </p>
+    <p>
+        <!-- 密码输入框 -->
+        <input type="password" placeholder="请输入密码">
+    </p>
+    <p>
+        <!-- 日期选择框 -->
+        <input type="date" value="">
+    </p>
+    <p>
+        <!-- 搜索框 -->
+        <input type="search" name="" id="">
+    </p>
+    <p>
+        <!-- 滑块 -->
+        <input type="range" name="" id="" min="0" max="10">
+    </p>
+    <p>
+        <!-- 颜色选择器 -->
+        <input type="color" name="" id="">
+    </p>
+    <p>
+        <!-- 数字输入框 step：步长，每次增加多少-->
+        <input type="number" name="" id="" min="1" max="10" step="2">
+    </p>
+    <p>
+        <!-- 多选框-->
+        爱好：
+        <input type="checkbox" name="loves">音乐
+        <input type="checkbox" name="loves">电影
+        <input type="checkbox" name="loves">阅读
+        <input type="checkbox" name="loves">游戏
+        <input checked type="checkbox" name="loves">其他
+    </p>
+    <p>
+        <!-- 单选框-->
+        性别：
+        <input checked type="radio" name="gender">男
+        <input type="radio" name="gender">女
+    </p>
+    <p>
+        <!-- 文件选择框-->
+        <input type="file">
+    </p>
+
+    <input type="reset">
+    <input type="button" value="按钮">
+    <input type="submit">
+</body>
+
+</html>

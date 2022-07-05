@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus 聚焦样式</title>
+    <style>
+        input:focus {
+            outline: 1px solid #008c8c;
+            outline-offset: 0;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a tabindex="2" href="https://www.baidu.com">百度</a>
+    </p>
+    <p>
+        <input tabindex="3" type="text" name="" id="">
+    </p>
+    <p>
+        <button tabindex="1">提交按钮</button>
+    </p>
+</body>
+
+</html>

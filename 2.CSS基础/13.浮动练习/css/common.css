@@ -1,0 +1,26 @@
+/* 多页面通用样式 */
+
+
+/* 底部页码切换 */
+
+.pager {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.pager a {
+    border: 1px solid #D8D8D8;
+    padding: 5px 10px;
+    margin: 0 3px;
+}
+
+.pager a:hover {
+    border: 1px solid #EF4238;
+    padding: 5px 10px;
+    border: none;
+}
+
+.pager a.selected {
+    color: #fff;
+    background-color: #EF4238;
+}
